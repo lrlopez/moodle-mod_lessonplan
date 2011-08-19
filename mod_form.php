@@ -44,16 +44,19 @@ class mod_lessonplan_mod_form extends moodleform_mod {
 
     /// Adding the standard "name" field
         $mform->addElement('text', 'name', get_string('lessonplanname', 'lessonplan'), array('size'=>'64'));
-        if (!empty($CFG->formatstringstriptags)) {
+        /*if (!empty($CFG->formatstringstriptags)) {
             $mform->setType('name', PARAM_TEXT);
         } else {
             $mform->setType('name', PARAM_CLEAN);
         }
         $mform->addRule('name', null, 'required', null, 'client');
         $mform->addRule('name', get_string('maximumchars', '', 255), 'maxlength', 255, 'client');
-        $mform->addHelpButton('name', 'lessonplanname', 'lessonplan');
+        $mform->addHelpButton('name', 'lessonplanname', 'lessonplan');*/
 
-    /// Adding the standard "intro" and "introformat" fields
+    /// Adding the "shared" checkbox
+        $mform->addElement('checkbox', 'shared', get_string('lessonplanname', 'shared'), array( 'group' => 1 ), array( 0,1 ));
+
+        /// Adding the standard "intro" and "introformat" fields
         $this->add_intro_editor();
 
 //-------------------------------------------------------------------------------
