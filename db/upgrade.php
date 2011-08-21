@@ -1,21 +1,4 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
-//
-// Moodle is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-//
-// Moodle is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-//
-// You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-
-
 /**
  * This file keeps track of upgrades to the lessonplan module
  *
@@ -27,8 +10,8 @@
  * here will all be database-neutral, using the functions defined in DLL libraries.
  *
  * @package   mod_lessonplan
- * @copyright 2010 Your Name
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @copyright 2011 Luis-Ramon Lopez Lopez
+ * @license   http://www.fsf.org/licensing/licenses/agpl-3.0.html GNU Affero GPL 3
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -44,7 +27,7 @@ function xmldb_lessonplan_upgrade($oldversion) {
     global $DB;
 
     $dbman = $DB->get_manager(); // loads ddl manager and xmldb classes
-
+/*
 /// And upgrade begins here. For each one, you'll need one
 /// block of code similar to the next one. Please, delete
 /// this comment lines once this file start handling proper
@@ -142,7 +125,7 @@ function xmldb_lessonplan_upgrade($oldversion) {
     if ($oldversion < 2007040200) {
     /// insert here code to perform some actions (same as in install.php)
     }
-
+*/
 /// And that's all. Please, examine and understand the 3 example blocks above. Also
 /// it's interesting to look how other modules are using this script. Remember that
 /// the basic idea is to have "blocks" of code (each one being executed only once,

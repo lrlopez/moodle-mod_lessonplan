@@ -1,21 +1,4 @@
 <?php
-
-// This file is part of Moodle - http://moodle.org/
-//
-// Moodle is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-//
-// Moodle is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-//
-// You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-
-
 /**
  * English strings for lessonplan
  *
@@ -23,17 +6,21 @@
  * if you like, and it can span multiple lines.
  *
  * @package   mod_lessonplan
- * @copyright 2010 Your Name
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @copyright 2011 Luis-Ramon Lopez Lopez
+ * @license   http://www.fsf.org/licensing/licenses/agpl-3.0.html GNU Affero GPL 3
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['modulename'] = 'lessonplan';
-$string['modulenameplural'] = 'lessonplans';
-$string['lessonplanfieldset'] = 'Custom example fieldset';
-$string['lessonplanname'] = 'lessonplan name';
-$string['lessonplanname_help'] = 'This is the content of the help tooltip associated with the lessonplanname field. Markdown syntax is supported.';
-$string['lessonplan'] = 'lessonplan';
-$string['pluginadministration'] = 'lessonplan administration';
-$string['pluginname'] = 'lessonplan';
+$string['modulename'] = 'Lesson planning';
+$string['modulenameplural'] = 'Lesson plannings';
+$string['lessonplanname'] = 'Display name';
+$string['lessonplanname_help'] = 'Name of the lesson plan for this course.';
+$string['pluginadministration'] = 'Lesson planning administration';
+$string['pluginname'] = 'Lesson planning';
+$string['shared'] = 'Share this plan globally on the site';
+
+$string['task'] = 'Task';
+$string['tasks'] = 'Tasks';
+$string['unit'] = 'Unit';
+$string['units'] = 'Units';
